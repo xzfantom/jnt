@@ -1,0 +1,96 @@
+html {
+    font-family: Urbanist, sans-serif;
+}
+
+header {
+    color: #3E3E3E;
+
+    a {
+        color: #3E3E3E;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background-color: #3E3E3E;
+    
+    a {
+       color: #D1D1D1; 
+    }
+}
+
+.about {
+    background-color: #EBF7FF;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 0.625rem;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    &.active {
+        text-decoration: underline 0.125rem #926B6A;
+        text-underline-offset: 0.25rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.hero-image {
+    width: 50vw;
+}
+
+.hero-title {
+    font-size: 3.125rem;
+    margin: 1rem 0;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.hero-arrow {
+    margin: 1rem 4rem 0 4rem;
+}
+
+.about-section {
+    background-color: #FFFFFF;
+}
+
+.quotes-section {
+    background-color: #FEF2E7;
+}
+
+/* Utility classes */
+.flex {
+    display: flex;
+}
