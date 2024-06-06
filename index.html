@@ -10,7 +10,12 @@
     <meta name="author" content="Artsiom Martynau" />
 
     <!-- Favicon and Touch Icons -->
-    <!-- <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/favicon-512x512.png"> -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/img/favicon.png"
+    />
 
     <!-- Google Fonts Files -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,8 +100,18 @@
       <section id="about" class="about-section">
         <div class="container">
           <div class="about-images">
-            <img src="./assets/img/about-left.png" alt="About Left" />
-            <img src="./assets/img/about-right.png" alt="About Right" />
+            <div class="image-container">
+              <img
+                class="about-img-right"
+                src="./assets/img/about-right.png"
+                alt="About Right"
+              />
+              <img
+                class="about-img-left"
+                src="./assets/img/about-left.png"
+                alt="About Left"
+              />
+            </div>
           </div>
           <div class="about-content">
             <h2 class="about-title">About</h2>
@@ -123,23 +138,34 @@
 
       <!-- Sectiom Quotes -->
       <section id="quotes" class="quotes-section">
-        <div class="container">
-          <p class="quote-text">
-            The end of a relationship or a job - of anything at all - is just
-            evolution.
-          </p>
-          <p class="quote-text">
-            Change is the essence of life. Be willing to surrender what you are
-            and have for what you could become.
-          </p>
-          <p class="quote-text">
-            If you want to evolve, you must learn. Learning leads to growth.
-            Growth leads to evolution.
-          </p>
-          <p class="quote-text">
-            You cannot enjoy the world with your nose pressed against the
-            window. Don’t stay in the same place. Go outside.
-          </p>
+        <h2 style="text-align: center; margin: 0; padding: 2rem">Quotes</h2>
+        <div class="slider">
+          <div class="slides">
+            <div>
+              <p class="quote-text">
+                The end of a relationship or a job - of anything at all - is
+                just evolution.
+              </p>
+            </div>
+            <div>
+              <p class="quote-text">
+                Change is the essence of life. Be willing to surrender what you
+                are and have for what you could become.
+              </p>
+            </div>
+            <div>
+              <p class="quote-text">
+                If you want to evolve, you must learn. Learning leads to growth.
+                Growth leads to evolution.
+              </p>
+            </div>
+            <div>
+              <p class="quote-text">
+                You cannot enjoy the world with your nose pressed against the
+                window. Don’t stay in the same place. Go outside.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
