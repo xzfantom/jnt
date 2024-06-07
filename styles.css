@@ -126,6 +126,19 @@ footer {
     padding-bottom: 2rem;
 }
 
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.quote-container img {
+    align-self: flex-end;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 1rem;
+}
+
 .slider {
     width: 100%;
     text-align: center;
@@ -134,7 +147,8 @@ footer {
 
 .slides {
     display: flex;
-    padding: 0 2rem;
+    padding: 2rem;
+    justify-content: center;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -157,11 +171,30 @@ footer {
     position: relative;
 
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 0px        24px        10px        24px
 }
 
+.book {
+    background-color: #FCF4F4;
+}
+
+.meditation {
+    background-color: #FEF2E7;
+}
+
+.visualization {
+    background-color: #FEF8E7;
+}
+
+.healing {
+    background-color: #F1F1FF;
+}
+
+.contact {
+    background-color: #EBF7FF;
+
+}
 /* Utility classes */
 .flex {
     display: flex;
