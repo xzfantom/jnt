@@ -309,6 +309,34 @@ p {
   display: flex;
 }
 
+.book-takeaways {
+  display: flex;
+  background-color: #fff;
+  div {
+    width: 50%;
+  }
+}
+
+.book-takeaways-cards {
+  display: flex;
+  flex-direction: row;
+  div {
+    width: 100%;
+    div {
+      background-color: #ebf7ff;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0.5rem;
+      display: inline-block;
+      border-radius: 6px;
+      max-width: 18rem;
+    }
+  }
+}
+
+.book-takeaways-header {
+  max-width: 18rem;
+}
+
 .author-card {
   display: flex;
   align-items: center;
