@@ -353,6 +353,22 @@ p {
   background-color: #fef2e7;
 }
 
+.meditation-hero {
+  display: flex;
+  margin-right: var(--page-margin);
+  padding-bottom: 1rem;
+
+  img {
+    flex-shrink: 0;
+    width: 803px;
+    height: 506px;
+  }
+}
+
+.meditation-cards {
+  background-color: #fff;
+}
+
 .visualization {
   background-color: #fef8e7;
 }
