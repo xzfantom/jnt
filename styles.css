@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  text-wrap: pretty;
 }
 
 html {
@@ -99,7 +100,6 @@ p {
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
   background-color: #7fb3d5;
   color: #000000;
   border-radius: 0.5rem;
@@ -356,7 +356,7 @@ p {
 .meditation-hero {
   display: flex;
   margin-right: var(--page-margin);
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 
   img {
     flex-shrink: 0;
@@ -365,8 +365,46 @@ p {
   }
 }
 
+.meditation-description {
+  margin-left: -5rem;
+  align-self: center;
+}
+
+.meditation-arrow {
+  vertical-align: top;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
 .meditation-cards {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem var(--page-margin);
+}
+
+.meditation-cards ol {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.meditation-cards li {
+  display: block;
+  padding: 1rem;
+  background-color: #ebf7ff;
+  max-width: 24.5rem;
+  flex-grow: 1;
+  flex-basis: 30%;
+  border-radius: 12px;
+
+  p:first-child {
+    font-weight: 900;
+    font-size: 3.75rem;
+    margin: 2rem 0;
+    color: #d0e2ee;
+  }
 }
 
 .visualization {
