@@ -218,11 +218,15 @@ p {
   padding: 2rem;
   /* justify-content: center; */
 
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
 
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+}
+
+.slides:hover {
+  overflow-x: scroll;
 }
 
 .slides > div {
