@@ -86,7 +86,10 @@ p {
   font-size: 1.25rem;
 
   &.active {
-    text-decoration: underline 0.125rem #926b6a;
+    text-underline-offset: 0.25rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.125rem;
+    text-decoration-color: #926b6a;
     text-underline-offset: 0.25rem;
   }
 }
@@ -114,7 +117,9 @@ p {
 }
 
 .hero-section {
+  max-width: 100vw;
   padding: 0 var(--page-margin);
+  overflow: hidden;
 }
 
 .hero-content {
@@ -181,6 +186,7 @@ p {
 .quotes-section {
   background-color: #fef2e7;
   padding: 2rem var(--page-margin);
+  width: 100vw;
 }
 
 .quotes-header {
@@ -204,14 +210,13 @@ p {
 
 .slider {
   width: 100%;
-  text-align: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .slides {
   display: flex;
   padding: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -332,16 +337,37 @@ p {
   background-color: #fff;
   padding: 2rem var(--page-margin);
   align-items: center;
+  gap: 2rem;
+
   div {
     flex-basis: 50%;
+  }
+}
+
+.book-takeaway-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  img {
+    position: relative;
+    top: -3rem;
+  }
+
+  h2 {
+    margin-right: 6rem;
   }
 }
 
 .book-takeaways-cards {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+
   div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     div {
       background-color: #ebf7ff;
       padding: 1rem 1.5rem;
